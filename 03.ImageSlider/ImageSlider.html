@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Slider</title>
+    <style>
+        div {
+            text-align:center;
+            margin:auto;
+        }
+
+        #slider {
+            max-width:550px;
+            max-height:150px;
+        }
+
+            #slider img {
+                height:100px;
+                width:150px;
+                padding:5px;
+                
+            }
+
+                #slider img:hover {
+                    opacity:0.5;
+                }
+
+        #bigImageHolder img {
+            height:300px;
+            width:500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bigImageHolder"></div>
+    <div id="slider"></div>
+    <div id="btns"></div>
+
+    <script src="scripts/extension.js"></script>
+    <script src="scripts/imageSlider.js"></script>
+    <script>
+
+        var img1 = Object.create(Image);
+        img1.init("img1", "images/bulgarianSMALL.jpg", "images/bulgarian_nature2.jpg");
+
+        var img2 = Object.create(Image);
+        img2.init("img2", "images/beautifulSMALL.jpg", "images/beautiful nature 2.jpg");
+
+        var img3 = Object.create(Image);
+        img3.init("img3", "images/natureSMALL.jpg", "images/nature_sceneries_wal_09.jpg");
+
+        //same urls like this bellow
+        var img4 = Object.create(Image);
+        img4.init("img4", "images/bulgarianSMALL.jpg", "images/bulgarian_nature2.jpg");
+
+        var img5 = Object.create(Image);
+        img5.init("img5", "images/beautifulSMALL.jpg", "images/beautiful nature 2.jpg");
+
+        var img6 = Object.create(Image);
+        img6.init("img6", "images/natureSMALL.jpg", "images/nature_sceneries_wal_09.jpg");
+
+        var prevButton = Object.create(Button);
+        prevButton.init("#btns", "prev");
+
+        var nextButton = Object.create(Button);
+        nextButton.init("#btns", "next");
+
+        var slider = Object.create(Slider);
+        slider.init([img1, img2, img3, img4, img5, img6],"#bigImageHolder", prevButton, nextButton);
+        slider.imgInit("#slider");
+
+    </script>
+</body>
+</html>

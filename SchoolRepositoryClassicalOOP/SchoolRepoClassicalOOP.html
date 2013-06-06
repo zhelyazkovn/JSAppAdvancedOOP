@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>School Repo</title>
+</head>
+<body>
+    <script src="class-create.js"></script>
+    <script src="schoolRepoClassicalOOP.js"></script>
+    <script>
+        var jeko = new Student("Zhelyazko", "Zhelyazkov", 54, 1);
+        var svetla = new Student("Svetla", "Zhelyazkova", 56, 2);
+        var grigor = new Student("Grigor", "Dechev", 30, 3);
+        var nikolay = new Student("Nikolay", "Zhelyazkov", 25, 4);
+        console.log(jeko.introduce());
+        console.log(grigor.introduce());
+        console.log(svetla.introduce());
+        console.log(nikolay.introduce());
+
+        var svetlin = new Teacher("Svetlin", "Nakov", 30, "CSharp");
+        var george = new Teacher("George", "Georgiev", 20, "JS");
+        console.log(svetlin.introduce());
+        console.log(george.introduce());
+
+        var csharp = new SchoolClass("CSharp", 5, { jeko: jeko, svetla: svetla }, svetlin);
+        var js = new SchoolClass("JS", 5, { grigor: grigor, nikolay: nikolay }, george);
+
+        var telerik = new School("Telerik Academy", "Sofia", { csharp: csharp, js: js });
+        console.log(telerik);
+    </script>
+</body>
+</html>

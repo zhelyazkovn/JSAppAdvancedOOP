@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>School Repo</title>
+</head>
+<body>
+    <script src="extension.js"></script>
+    <script src="schoolRepositoryProto.js"></script>
+    <script>
+        //-------------STUDENTS--------------//
+        var jeko = Object.create(Student);
+        jeko.init("Zhelyazko", "Zhelyazkov", 64, 1);
+
+        var svetla = Object.create(Student);
+        svetla.init("Svetla", "Zhelyazkova", 66, 2);
+
+        var grigor = Object.create(Student);
+        grigor.init("Grigor", "Dechev", 36, 3);
+        grigor.introduce();
+
+        var nikolay = Object.create(Student);
+        nikolay.init("Nikolay", "Zhelyazkov", 25, 4);
+        
+        console.log(jeko.introduce());
+        console.log(svetla.introduce());
+        console.log(grigor.introduce());
+        console.log(nikolay.introduce());
+
+        //-------------TEACHERS--------------//
+        var svetlin = Object.create(Teacher);
+        svetlin.init("Svetlin", "Nakov", 30, "CSharp");
+
+        var george = Object.create(Teacher);
+        george.init("George", "Georgiev", 20, "JS");
+
+        console.log(svetlin.introduce());
+        console.log(george.introduce());
+        //-------------CLASSES--------------//
+        var js = Object.create(Class);
+        js.init("JS", 10, { grigor: grigor, nikolay: nikolay }, svetlin);
+
+        var csharp = Object.create(Class);
+        csharp.init("CSharp", 10, { jeko: jeko, svetla: svetla }, george);
+
+        //-------------SCHOOL--------------//
+        var telerik = Object.create(School);
+        telerik.init("Telerik Academy", "Sofia", { js: js, csharp: csharp });
+
+    </script>
+</body>
+</html>

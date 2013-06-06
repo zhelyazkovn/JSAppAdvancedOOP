@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SchoolRepositoryPrototypalOOP", "SchoolRepositoryPrototypalOOP\02.SchoolRepositoryPrototypalOOP.csproj", "{3E9AC8C4-E306-430F-BA31-2ED91051949C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SchoolRepositoryClassicalOOP", "SchoolRepositoryClassicalOOP\01.SchoolRepositoryClassicalOOP.csproj", "{62CAF40D-8E75-49F9-93D7-52EC5C1738A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ImageSlider", "03.ImageSlider\03.ImageSlider.csproj", "{311D6F17-D9DE-4C22-92A6-EE085CB2AC20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9AC8C4-E306-430F-BA31-2ED91051949C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9AC8C4-E306-430F-BA31-2ED91051949C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9AC8C4-E306-430F-BA31-2ED91051949C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9AC8C4-E306-430F-BA31-2ED91051949C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CAF40D-8E75-49F9-93D7-52EC5C1738A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CAF40D-8E75-49F9-93D7-52EC5C1738A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CAF40D-8E75-49F9-93D7-52EC5C1738A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CAF40D-8E75-49F9-93D7-52EC5C1738A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{311D6F17-D9DE-4C22-92A6-EE085CB2AC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311D6F17-D9DE-4C22-92A6-EE085CB2AC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311D6F17-D9DE-4C22-92A6-EE085CB2AC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311D6F17-D9DE-4C22-92A6-EE085CB2AC20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
